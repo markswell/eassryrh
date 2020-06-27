@@ -20,6 +20,12 @@ public class Setor {
     @OneToMany(mappedBy = "setor")
     private List<Pessoas> pessoas;
 
+    public Setor() {}
+
+    public Setor(String nome) {
+        this.nome = nome;
+    }
+
     public Integer getId() {
         return id;
     }
