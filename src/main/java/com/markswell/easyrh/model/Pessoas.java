@@ -23,6 +23,19 @@ public class Pessoas {
     @JoinColumn(name = "setor_id", nullable = false)
     private Setor setor;
 
+    public Pessoas() {}
+
+    public Pessoas(Integer id) {
+        this.id = id;
+    }
+
+    public Pessoas(String nome, String sobrenome, String profissao, Setor setor) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.profissao = profissao;
+        this.setor = setor;
+    }
+
     public Integer getId() {
         return id;
     }

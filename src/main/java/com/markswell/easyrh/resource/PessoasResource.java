@@ -56,7 +56,7 @@ public class PessoasResource {
     public ResponseEntity delete(@PathVariable Integer id) {
         try {
             service.delete(id);
-            return ResponseEntity.ok().build();
+            return ResponseEntity.noContent().build();
         } catch (Exception e) {
             return ResponseEntity.notFound().build();
         }
