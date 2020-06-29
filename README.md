@@ -9,4 +9,5 @@ Api de exemplo feita como teste.
 * Execute o comando "docker start easyrh" para iniciar o contêiner/aplicação
 
 ## Teste aplicação
+* Utilizar requisições no pdrão url_do_host:8080/api/*
 * Utilizar nas requisições basic auth com usuário "admin" e a senha "Qwerty"
